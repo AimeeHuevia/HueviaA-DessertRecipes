@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Montserrat:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="../img/dessertcradle-logo.png">
+        <title>Desserts Cradle</title>
+    </head>
+    <body>
+        <section class="bg-cover h-auto"
+            style="background-image: url(../img/landing-background-1.jpg);">
+            <nav class="p-5 pt-2 shadow
+                md:flex md:items-center md:justify-between">
+                <div class="flex
+                    justify-between
+                    items-center ">
+                    <img class="h-8 inline pl-3"
+                        src="..//img/logo.png">
+
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul class="md:flex md:items-center z-[10] md:z-auto md:static
+                    absolute w-full left-0 md:w-auto md:py-0 md:pl-0 pl-7
+                    md:opacity-100 opacity-0 top-[-400px] transition-all ease-in
+                    duration-500 font-[Montserrat] md:pt-4 ">
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="../dist/index.html" class="text-sm hover:text-primary-50
+                            text-black">HOME</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="../dist/index.html#recipes" class="text-sm">RECIPES</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#ABOUT" class="text-sm">ABOUT</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#CONTACT" class="text-sm">CONTACT</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#CONTACT" class="text-sm">BLOGS</a>
+                    </li>
+
+                    <button class=" text-black font-[Montserrat] duration-500
+                        px-6 py-2 mx-4 hover:bg-primary-50 pr-6">
+                        LOG IN
+                    </button>
+                </ul>
+            </nav>
+
+
+
+            <p class="text-3xl lg:text-5xl font-[Cormorant] font-bold
+                text-primary-50 mt-12 lg:ml-12 md:pl-12">White Chocolate & Raspberry Rocky Road</p>
+
+            <div class="flex flex-wrap mt-8">
+                <img class="w-full md:w-1/2 lg:pl-12 shadow h-auto lg:mb-28"
+                    src="../img/Whitechocolate.jpg" alt="Image">
+
+                <div class="w-full md:w-1/2 p-4">
+                    <div class=" rounded-lg shadow-lg p-4 lg:ml-28 lg:mr-28
+                        ">
+                        <h2 class="text-3xl font-bold mb-2 text-center
+                            fontgv text-primary-50 shadow pb-2">Desserts
+                            Cradle Recipe</h2>
+                        <div class="font-[Montserrat] text-lg lg:text-xl">
+                            <p class="leading-relaxed"><img
+                                    src="../img/knife.png" class="h-12 w-12"
+                                    alt="image failed to load">
+                                <span class="font-bold">Prep: </span> 15 Min + 40 Min To Set
+                            </p>
+                            <p class="leading-relaxed"><img src="../img/gloves.png"
+                                    class="h-12 w-12" alt="image failed to
+                                    load">
+                                <span class="font-bold">Makes: </span> 20 Squares
+                            </p>
+                            <p class="leading-relaxed"><img
+                                    src="../img/person.png" class="h-12 w-12"
+                                    alt="image failed to load">
+                                <span class="font-bold">Serves: </span>  6-8
+                            </p>
+
+                            <p class="text-lg lg:text-xl font-[Montserrat] font-bold mt-8">For lovers of white chocolate, this delicious twist on rocky road is sure to please the sweetest tooth!</p>
+                        </div>
+                        <a href="">
+                            <button class=" text-black font-[Montserrat]
+                                duration-500
+                                px-6 py-2 mt-7 border border-black
+                                hover:bg-primary-50 hover:text-primary-50 mb-5">
+                                Add to Collection
+                            </button>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+
+            <script>
+  function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script>
+ <!-- <h2 class="text-3xl lg:text-4xl text-center
+                font-[Montserrat] font-semibold lg:p-12 ml-5 mr-5 lg:ml-1 lg:mr-1">Baked
+                Vanilla and Ricotta Tart <br>with Star Anise Citrus Recipe</h2> -->
+
+        </section>
+
+        <section class="">
+            <hr class="my-2 h-2 border-t-0 bg-transparent bg-gradient-to-r
+                from-transparent via-yellow-800 to-transparent opacity-25
+                dark:opacity-100">
+            <div class="flex flex-wrap font-[Cormorant]">
+                <div class="w-full sm:w-1/2 p-4">
+                    <h1 class="text-xl lg:text-3xl font-[Montserrat]">
+                        INGREDIENTS
+                    </h1>
+                    <ul class="text-lg lg:text-3xl py-3 pl-10">
+                        <li class="py-2 list-disc ml-6">
+                            100g Copha
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                            ¼ cup icing sugar
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                            150g white chocolate, melted
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                            100g pink marshmallows, halved
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                            2 teaspoons vanilla
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                            100g red raspberry jellies, halved
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                            1 star anise
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                           100g caramel popcorn
+                        </li>
+                        <li class="py-2 list-disc ml-6">
+                            ½ cup shredded coconut
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="w-full sm:w-1/2 p-4 pr-16">
+                    <h1 class="text-xl lg:text-3xl font-[Montserrat]">
+                        PROCEDURE
+                    </h1>
+                    <ul class="text-lg font- lg:text-3xl py-3 pl-10">
+                        <li class="py-2 list-decimal ml-6">
+                            Line the base and sides of a 15 x 30cm slab tin with baking paper.
+                        </li>
+                        <li class="py-2 list-decimal ml-6">
+                            Melt the Copha in a small saucepan over a low heat. Stir in the icing sugar until well combined.
+                        </li>
+                        <li class="py-2 list-decimal ml-6">
+                            Melt in the white chocolate in a large bowl in the microwave on 50% power for 1 minute. Stir and microwave for a further 30 seconds, then stir until smooth.
+                        </li>
+                        <li class="py-2 list-decimal ml-6">
+                            Add the Copha mixture to the chocolate and fold through all the remaining ingredients, coating well.
+                        </li>
+                        <li class="py-2 list-decimal ml-6">
+                            Press the mixture evenly into the lined tin and allow to set in a cool place or refrigerate.
+                        </li>
+                        <li class="py-2 list-decimal ml-6">
+                            When rocky road is set, cut into squares with a warm sharp knife and store in an airtight container until required. Rocky Road may also be drizzled with pink chocolate to decorate.
+                    </ul>
+                    <div class=" rounded-lg shadow-lg p-4 ml-10 lg:ml-28 lg:mr-28
+                        bg-yellow-50 items-center my-5">
+                        <p class="font-[Montserrat] text-sm lg:text-xl">
+                            <span class="font-bold text-xl">
+                                Tips & Hints <br>
+                            </span>
+                            This rocky road is also delicious with dried cranberries or blueberries added. Nuts may also be used.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-8 h-2 mb-1 border-t-0 bg-transparent bg-gradient-to-r
+                from-transparent via-yellow-800 to-transparent opacity-25
+                dark:opacity-100">
+        </section>
+
+
+        <section class=" h-auto w-full lg:pb-60" id="recipes" style="background-image: url(../img/landing-background-1.jpg);">
+            <p class="text-2xl fontgv lg:text-5xl text-primary-50 lg:ml-7 pt-12 text-center">
+                More Recipes from Desserts Cradle</p>
+            <div class="flex h-auto justify-center
+                pb-20 lg:pb-0 lg:mt-12">
+                <div class="grid grid-cols-1 gap-3 lg:gap-12
+                    lg:grid-cols-4">
+
+                    <a href="../dist/tart.html"><div class="font-[Montserrat] group relative cursor-pointer
+                        items-center justify-center pb-2 lg:pb-0">
+                        <div class="h-80 w-80 py-10 px-10 lg:py-0 lg:px-0">
+                            <img class="h-full w-full rounded-md shadow-md"
+                                src="../img/cheesecake.jpg" alt="" />
+                            <p class="text-sm lg:text-lg
+                                font-[Montserrat] font-extrabold
+                                text-black pt-4  hover:text-yellow-800">VANILLA & RICOTTA TART</p>                      
+                        </div>
+                    </div></a> 
+                    
+                    <a href="../dist/chocoshell.html"><div class="font-[Montserrat] group relative cursor-pointer
+                        items-center justify-center pb-2 lg:pb-0">
+                        <div class="h-80 w-80 py-10 px-10 md:py-0 md:px-0">
+                            <img class="h-full w-full rounded-md shadow-md"
+                                src="../img/chocoshell.jpg" alt="" />
+                            <p class="text-sm lg:text-lg
+                                font-[Montserrat] font-extrabold
+                                text-black pt-4  hover:text-yellow-800">BERRY FILLED EASTER EGGS</p>
+                        </div>
+                    </div></a>
+                    <a href="../dist/wheelcake.html"><div class="font-[Montserrat] group relative cursor-pointer
+                        items-center justify-center pb-2 lg:pb-0">
+                        <div class="h-80 w-80 py-10 px-10 lg:py-0 lg:px-0">
+                            <img class="h-full w-full rounded-md shadow-md"
+                                src="../img/wheelcake.jpg" alt="" />
+                            <p class="text-sm lg:text-lg
+                                font-[Montserrat] font-extrabold
+                                text-black pt-4  hover:text-yellow-800 ">GIANT WAGON WHEEL CAKE</p>                      
+                        </div>
+                    </div></a>
+
+                    <a href="../dist/pudding.html"><div class="font-[Montserrat] group relative cursor-pointer
+                        items-center justify-center pb-2 lg:pb-0">
+                        <div class="h-80 w-80 py-10 px-10 lg:py-0 lg:px-0">
+                            <img class="h-full w-full rounded-md shadow-md"
+                                src="../img/pudding.jpg" alt="" />
+                            <p class="text-sm lg:text-lg
+                                font-[Montserrat] font-extrabold
+                                text-black pt-4 hover:text-yellow-800">CHOCOLATE HAZELNUT PUDDING</p>                      
+                        </div>
+                    </div></a>
+                </div>
+
+            </div>
+                </div>
+            </div>
+
+        </section>
+<div class="items-center justify-center text-center py-40">
+                        <p class="text-4xl md:text-4xl fontgv
+            text-primary-50 pl-7 ">Desserts you can't resist</p>
+            <p class="text-4xl md:text-5xl font-[Montserrat]
+                text-black font-bold">SWEET IN EVERY DETAIL </p>
+                <p class="font-[Cormorant] text-3xl">like the recipes from desserts cradle</p>     
+                </div>
+        
+
+    <footer class="h-28 shadow pt-10 px-10" style="background-image: url(../img/background1.jpg);">
+            <img class="h-10" src="../img/logo.png" alt="">
+            <h2 class="text-black text-right text-xl">&copy; AILH All Rights Reserved </h2>
+    </footer>
+
+    </body>
+</html>

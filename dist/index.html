@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Montserrat:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="../img/dessertcradle-logo.png">
+        <title>Desserts Cradle</title>
+    </head>
+
+    <body class="h-screen w-full">
+        <section class="bg-cover h-screen w-full"
+            style="background-image: url(../img/background.jpg);">
+            <nav class="p-5 pt-2 shadow
+                md:flex md:items-center md:justify-between">
+                <div class="flex
+                    justify-between
+                    items-center ">
+                    <img class="h-8 inline pl-3"
+                        src="..//img/logo.png">
+
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul class="md:flex md:items-center z-[10] md:z-auto md:static
+                  bg-white lg:bg-transparent absolute w-full left-0 md:w-auto md:py-0 md:pl-0 pl-7
+                    md:opacity-100 opacity-0 top-[-400px] transition-all ease-in
+                    duration-500 font-[Montserrat] md:pt-4 ">
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#HOME" class="text-sm hover:text-primary-50
+                            text-black">HOME</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50 
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#recipes" class="text-sm">RECIPES</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#ABOUT" class="text-sm">ABOUT</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#CONTACT" class="text-sm">CONTACT</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="#CONTACT" class="text-sm">BLOGS</a>
+                    </li>
+
+                    <button class=" text-black font-[Montserrat] duration-500
+                        px-6 py-2 mx-4 hover:bg-primary-50 pr-6">
+                        LOG IN
+                    </button>
+                    <h2 class=""></h2>
+                </ul>
+            </nav>
+
+            <script>
+          function Menu(e){
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+          }
+        </script>
+
+            <div class="grid lg:grid-cols-2 items-center justify-items-center
+                gap-5 pt-28 mx-4">
+                <div class="order-2 lg:order-2 flex flex-col justify-center
+                    items-center">
+                    <p class="text-4xl lg:text-5xl fontgv text-primary-50 py-3 lg:py-6">Sweet
+                        bites for you</p>
+                    <p class="text-4xl font-bold lg:text-8xl font-[Montserrat]">TASTEFUL</p>
+                    <p class="text-md lg:text-3xl 
+                        font-[Cormorant] pl-5 py-3 lg:py-6 mr-4 text-center">It's always good time for sweets! Made
+                        with care and prepared with love, our desserts are all
+                        you might need to make every day special. Try our
+                        recipes now.</p>
+                    <a href="#recipes">
+                        <button class=" text-black font-[Montserrat]
+                            duration-500
+                            px-6 py-2 mx-4 mt-7 border border-black
+                            hover:bg-primary-50 hover:text-primary-50 pr-6">
+                            View recipes
+                        </button>
+                    </a>
+                </div>
+                <div class="order-1 lg:order-1">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class=" h-screen w-full" id="recipes" >
+        <p class="text-2xl font-[Poppins] lg:text-7xl text-white
+            text-center">Recipes</p>
+        <div class="flex h-auto justify-center 
+            pb-20 lg:pb-0 mt-12">
+            <div class="grid grid-cols-1 gap-8 lg:gap-16
+                lg:grid-cols-3">
+
+                <div class="font-[Montserrat] group relative cursor-pointer
+                items-center justify-center pb-32 lg:pb-0">
+                <div class="h-96 w-96 py-10 px-10 lg:py-0 lg:px-0">
+                    <img class="h-full w-full"
+                        src="../img/cheesecake.jpg" alt="" />
+                        <p class="text-center text-lg md:text-lg font-[Montserrat] font-extrabold
+                        text-black pt-4">VANILLA & RICOTTA TART</p>
+                        <p class="text-center text-lg md:text-md font-[Cormorant]
+                        text-black pt-2 pl-2 pr-2">
+                            This sweet baked ricotta cake is so delicious served with the aromatic star anise citrus fruit.
+                        </p>
+                        <div class="flex items-center justify-center pt-2 lg:pt-3">
+                            <p class="mx-4 my-6 md:my-0
+                            inline-block
+                            relative
+                            cursor-pointer
+                            duration-500
+                            before:absolute
+                            before:-bottom-1
+                            before:w-0
+                            before:h-0.5
+                            before:rounded-sm
+                            before:opacity-0
+                            before:transition-all
+                            before:duration-500
+                            before:bg-gradient-to-r
+                            before:from-primary-50
+                            before:via-primary-50
+                            before:to-primary-50
+                            hover:before:w-full
+                            hover:before:opacity-100">
+                           <a href="../dist/tart.html" class="text-xs hover:text-primary-50
+                           text-primary-50"> VIEW RECIPE</a>
+                            </p>
+                </div>                 
+                
+                </div>
+            </div>
+
+            <div class="font-[Montserrat] group relative cursor-pointer
+            items-center justify-center pb-32 lg:pb-0">
+            <div class="h-96 w-96 py-10 px-10 md:py-0 md:px-0">
+                <img class="h-full w-full"
+                    src="../img/chocoshell.jpg" alt="" />
+                    <p class="text-center text-lg md:text-lg font-[Montserrat] font-extrabold
+                    text-black pt-4">BERRY FILLED EASTER EGGS</p>
+                    <p class="text-center text-lg md:text-md font-[Cormorant]
+                    text-black pt-2 pl-2 pr-2">
+                    This ultra-easy treat is a great way to enjoy Easter eggs as a special dessert.
+                    </p>
+                    <div class="flex items-center justify-center pt-2 lg:pt-3">
+                        <p class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                       <a href="../dist/chocoshell.html" class="text-xs hover:text-primary-50
+                       text-primary-50"> VIEW RECIPE</a>
+                        </p>
+            </div>                 
+            
+            </div>
+        </div>
+                   
+            <div class="font-[Montserrat] group relative cursor-pointer
+            items-center justify-center pb-32 lg:pb-0">
+            <div class="h-96 w-96 py-10 px-10 md:py-0 md:px-0">
+                <img class="h-full w-full"
+                    src="../img/Whitechocolate.jpg" alt="" />
+                    <p class="text-center text-lg md:text-lg font-[Montserrat] font-extrabold
+                    text-black pt-4">RASPBERRY ROCKY ROAD</p>
+                    <p class="text-center text-lg md:text-md font-[Cormorant]
+                    text-black pt-2 pl-2 pr-2">
+                        For lovers of white chocolate, this delicious twist on rocky road is sure to please the sweetest tooth!
+                    </p>
+                    <div class="flex items-center justify-center pt-2 lg:pt-3">
+                        <p class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                       <a href="../dist/rockyroad.html" class="text-xs hover:text-primary-50
+                       text-primary-50"> VIEW RECIPE</a>
+                        </p>
+            </div>   
+
+            </div>
+        </div>   
+          </div>
+            
+        </div>
+
+<!-- 
+         <div class="items-center justify-center text-center pt-64">
+                        <p class="text-4xl md:text-4xl fontgv
+            text-primary-50 pl-7 ">Desserts you can't resist</p>
+            <p class="text-4xl md:text-5xl font-[Montserrat]
+                text-black font-bold">SWEET IN EVERY DETAIL </p>
+                <p class="font-[Cormorant] text-3xl">like the recipes from desserts cradle</p>     
+                </div>
+         -->
+            
+        </div> 
+
+
+    <div class="bg-cover h-screen w-full pt-56 mt-72"
+        style="background-image: url(../img/background4.jpg);">
+        <div class="order-2 lg:order-2 flex flex-col
+            items-center justify-items-center pt-20">
+            <p class="text-4xl lg:text-7xl fontgv
+                text-primary-50 text-center">If there's no
+                desserts in Heaven,<br>I'm not going.</p>
+        </div>
+    </div>
+
+    
+         <div class="items-center justify-center text-center py-40">
+                        <p class="text-4xl md:text-4xl fontgv
+            text-primary-50 pl-7 ">Desserts you can't resist</p>
+            <p class="text-4xl md:text-5xl font-[Montserrat]
+                text-black font-bold">SWEET IN EVERY DETAIL </p>
+                <p class="font-[Cormorant] text-3xl">like the recipes from desserts cradle</p>     
+                </div>
+        
+
+    <footer class="h-28 shadow pt-10 px-10" style="background-image: url(../img/background1.jpg);">
+            <img class="h-10" src="../img/logo.png" alt="">
+            <h2 class="text-black text-right text-xl">&copy; AILH All Rights Reserved </h2>
+    </footer>
+        </section>
+
+
+       
+  </body>
+
+
+ 
+
+  
+</html>
